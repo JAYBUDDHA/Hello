@@ -8,9 +8,11 @@ def main():
     print("4. Divide")
     print("5. Power")
     print("6. Square Root")
+    print("7. Factorial")
+    
 
     while True:
-        choice = input("Enter choice (1/2/3/4/5/6): ")
+        choice = input("Enter choice (1/2/3/4/5/6/7): ")
 
         if choice in ('1', '2', '3', '4', '5'):
             num1 = float(input("Enter first number: "))
@@ -28,7 +30,10 @@ def main():
                 print("Result:", power(num1, num2))
         elif choice == '6':
             num = float(input("Enter a number: "))
-            print("Result:", sqrt(num))
+            print("Result:", math.sqrt(num))
+        elif choice == "7":
+            num = int(input("Enter a number: "))
+            print("Result:", math.factorial(num))
         else:
             print("Invalid input")
 
