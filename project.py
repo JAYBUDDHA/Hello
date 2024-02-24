@@ -7,7 +7,6 @@ def main():
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
-    print("6. Square Root")
     print("7. Factorial")
     
 
@@ -28,9 +27,6 @@ def main():
                 print("Result:", divide(num1, num2))
             elif choice == '5':
                 print("Result:", power(num1, num2))
-        elif choice == '6':
-            num = float(input("Enter a number: "))
-            print("Result:", math.sqrt(num))
         elif choice == "7":
             num = int(input("Enter a number: "))
             print("Result:", math.factorial(num))
