@@ -34,7 +34,7 @@ def main():
             print("Invalid input")
 
         next_calculation = input(f"Do you want to perform one more operation? (yes/no): ")
-        if next_calculation.lower() != "yes":
+        if next_calculation.upper() != "YES":
             break
 
 def add(x, y):
