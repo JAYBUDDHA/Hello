@@ -28,12 +28,12 @@ def main():
             elif choice == '5':
                 print("Result:", power(num1, num2))
         elif choice == "7":
-            num = int(input("Enter a number: "))
+            num = int(input("Enter a number : "))
             print("Result:", math.factorial(num))
         else:
             print("Invalid input")
 
-        next_calculation = input("Do you want to perform one more calculation? (yes/no): ")
+        next_calculation = input(f"Do you want to perform one more operation? (yes/no): ")
         if next_calculation.lower() != "yes":
             break
 
